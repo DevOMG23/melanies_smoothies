@@ -30,7 +30,7 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 ingredients_list = st.multiselect(
     'Choose up to 5 iingredients:'
     , my_dataframe
-    , max_selections = 6
+    , max_selections = 5
 )
 
 if ingredients_list:
